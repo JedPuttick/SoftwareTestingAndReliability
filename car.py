@@ -23,7 +23,7 @@ class Car:
     def accelerate(self, increase):
         if self.fuel_level == 0:
             print("The car has run out of fuel, acceleration not possible")
-            return
+            return False
 
         if self.current_speed + abs(increase) >= self.max_speed:
             self.current_speed = self.max_speed

@@ -18,3 +18,8 @@ def test_min_wheels_exception():
     with pytest.raises(Exception) as ex:
         car1 = Car("Honda", "Jazz", "HK11ABC", 2, 2, 1.2, 0, 60, 50)
     assert str(ex.value) == "There cannot be fewer than 3 wheels"
+
+def test_accelerate_without_fuel():
+    car1 = Car("Honda", "Jazz", "HK11ABC", 5, 4, 1.2, 0, 100, 0)
+    assert car1.accelerate(20) == False
+
