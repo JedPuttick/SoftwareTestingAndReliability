@@ -5,7 +5,7 @@ from car import Car
 def test_create_car():
     car1 = Car("Honda", "Jazz", "HK11ABC", 5, 4, 1.2, 0, 100, 100)
     assert car1.make == "Honda"
-    assert car1.model == "jazz"
+    assert car1.model == "Jazz"
     assert car1.num_plate == "HK11ABC"
     assert car1.doors == 5
     assert car1.wheels == 4
