@@ -1,7 +1,7 @@
 from car import Car
 
-car1 = Car("Skoda", "Fabia", "GR07 THO", 5, 4, 1.2, 0, 102, 100)
-car2 = Car("Porsche", "944", "OG23 SEP", 5, 4, 2.5, 0, 140, 100)
+car1 = Car("Skoda", "Fabia", "GR07THO", 5, 4, 1.2, 0, 102, 100, "car")
+car2 = Car("Porsche", "944", "OG23SEP", 5, 4, 2.5, 0, 140, 100, "car")
 
 listOfCars = [car1, car2]
 
@@ -19,3 +19,4 @@ print(f'\nAfter refueling, the first car has a fuel level of {car1.fuel_level}%'
 
 print(listOfCars)
 carSelection = int(input("What car would you like to select? [1] or [2]: "))
+

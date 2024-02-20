@@ -1,6 +1,6 @@
 class Car:
 
-    def __init__(self, make, model, num_plate, doors, wheels, engine_size, current_speed, max_speed, fuel_level):
+    def __init__(self, make, model, num_plate, doors, wheels, engine_size, current_speed, max_speed, fuel_level, type):
         if max_speed < 1:
             raise Exception("Max speed cannot be less than 1")
         elif doors < 1:
@@ -16,6 +16,7 @@ class Car:
         self.current_speed = current_speed
         self.max_speed = max_speed
         self.fuel_level = fuel_level
+        self.type = type
 
     def __repr__(self):
         return f'{self.make} {self.model} ({self.num_plate})'
